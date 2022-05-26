@@ -1,0 +1,163 @@
+:root {
+
+    /* Background base colors */
+
+    --background-color-white: #ffffff;
+    --background-color-seccoundary: #F4F4F4;
+
+    /* Topic colors */
+
+    --topic-color-blue: #C0FFF4;
+    --topic-color-green: #38DABD;
+    --topic-color-pink: #E69EFF;
+    --topic-color-soft-blue: #AAD1FF;
+    --topic-color-purple: #ACAAFF;
+    --topic-color-black: #000000;
+    --topic-color-gray: #5B5B5B;
+
+}
+
+*,
+*::before {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--background-color-seccoundary);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.teste {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about {
+    display: block;
+    flex-wrap: wrap;
+    max-width: 350px;
+    background-color: var(--background-color-white);
+    margin: 8px auto;
+    padding: 35px;
+    border-radius: 25px;
+}
+
+.about img {
+    max-height: 200px;
+}
+
+.about .name {
+    font-weight: 600;
+}
+
+.about .profession {
+    font-weight: 200;
+}
+
+.about .description {
+    font-weight: 300;
+    font-size: 12px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.about .social {
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.about ul {
+    display: flex;
+    justify-content: center;
+}
+
+.about li {
+    display: block;
+    padding: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.about li:hover {
+    transform: scale(1.2);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    background-color: var(--background-color-white);
+    border-radius: 25px;
+    margin: 8px auto;
+}
+
+.projects > div {
+    flex: 1 1 200px;
+    margin: 25px;
+    background-color: var(--background-color-seccoundary);
+    padding: 25px;
+    border-radius: 25px;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+}
+
+.projects > div:hover {
+    transform: scale(1.1);
+}
+
+.projects .project h1 {
+    font-size: 20px;
+}
+
+.projects .project p {
+    font-size: 12px;
+}
+
+.projects .project ul {
+    display: flex;
+}
+
+.projects .project li {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+
+}
+
+.nothing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    padding: -5px;
+    font-weight: 200;
+    font-size: 10px;
+}
+
+.footer a {
+    color: var(--topic-color-pink);
+    text-decoration: none;
+}
+
+.footer span {
+    color: #fa323d;
+}
